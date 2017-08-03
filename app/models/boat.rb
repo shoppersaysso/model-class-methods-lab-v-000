@@ -3,11 +3,12 @@ class Boat < ActiveRecord::Base
   has_many    :boat_classifications
   has_many    :classifications, through: :boat_classifications
 
-  def first_five
-
+  def self.first_five
+    all.limit(5)
   end
 
-  def dinghy
+  def self.dinghy
+    
   end
 
   def ship
