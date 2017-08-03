@@ -6,6 +6,7 @@ class Captain < ActiveRecord::Base
   end
 
   def self.sailors
+
   end
 
   def self.talented_seamen
