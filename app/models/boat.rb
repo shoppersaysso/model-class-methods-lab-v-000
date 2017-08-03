@@ -20,7 +20,7 @@ class Boat < ActiveRecord::Base
   end
 
   def without_a_captain
-    all(!captain:)
+    where(captain_id: nil)
   end
 
   def sailboats
