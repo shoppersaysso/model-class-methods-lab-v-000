@@ -12,6 +12,7 @@ class Boat < ActiveRecord::Base
   end
 
   def self.ship
+    where("length > 20")
   end
 
   def last_three_alphabetically
